@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    padding: 10px 0px;
+}
+
+
+
+
+.container{
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar{
+    font-weight: bold;
+}
+
+
+.header-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+
+}
+
+.primary-nav-flex-container, 
+.primary-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.primary-nav-btn, .logo, .sign-in{
+    height: 65px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+
+}
+
+
+
+
+.logo{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+
+.sign-in{
+    margin-left: 30px;
+}
+
+
+
+.primary-nav-btn:hover, .logo:hover, .sign-in:hover {
+    color: blue;
+    border-color: blue;
+    transform: translateY(-10px)
+
+}
+
+
+
+.hero-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+.myPhoto{
+    width: 200px;
+    height: 200px;
+}
+
+
